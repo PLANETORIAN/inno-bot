@@ -92,26 +92,10 @@ class ChatBotController {
   getINNOVISIONResponse(prompt) {
     const lowerPrompt = prompt.toLowerCase();
     
-    if (lowerPrompt.includes('innovision') || lowerPrompt.includes('what is')) {
-      return {
-        success: true,
-        response: "🎉 INNOVISION is NIT Rourkela's flagship tech festival - Eastern India's largest technology event! 🚀\n\n" +
-                 "📅 Event Dates: February 21-23, 2025\n" +
-                 "🏛️ Venue: NIT Rourkela Campus, Odisha\n\n" +
-                 "🎯 Key Features:\n" +
-                 "• 🏆 Hackathons & Coding Competitions\n" +
-                 "• 🤖 Robotics & Tech Workshops\n" +
-                 "• 💃 Cultural Events & Dance Competitions\n" +
-                 "• 🎵 DJ Nights & Live Music\n" +
-                 "• 🏨 Accommodation Available\n" +
-                 "• 🍽️ Food & Refreshments\n\n" +
-                 "Register now and be part of this amazing tech celebration! 🎊",
-        confidence: 1.0,
-        category: 'innovision'
-      };
-    }
-    
-    if (lowerPrompt.includes('register') || lowerPrompt.includes('registration')) {
+    // Registration related questions
+    if (lowerPrompt.includes('register') || lowerPrompt.includes('registration') || 
+        lowerPrompt.includes('how to register') || lowerPrompt.includes('sign up') ||
+        lowerPrompt.includes('entry fee') || lowerPrompt.includes('fee') || lowerPrompt.includes('cost')) {
       return {
         success: true,
         response: "📝 INNOVISION Registration Details:\n\n" +
@@ -126,14 +110,17 @@ class ChatBotController {
       };
     }
     
-    if (lowerPrompt.includes('accommodation') || lowerPrompt.includes('hostel') || lowerPrompt.includes('stay')) {
+    // Accommodation related questions
+    if (lowerPrompt.includes('accommodation') || lowerPrompt.includes('hostel') || 
+        lowerPrompt.includes('stay') || lowerPrompt.includes('room') || 
+        lowerPrompt.includes('lodge') || lowerPrompt.includes('place to stay')) {
       return {
         success: true,
         response: "🏨 INNOVISION Accommodation Details:\n\n" +
                  "✅ Accommodation Available at NIT Rourkela\n" +
                  "🏠 Options: Hostel rooms, Guest house\n" +
                  "🛏️ Room Types: Shared, Double, AC/Non-AC\n" +
-                 "🍽️ Mess Facility: Breakfast, Lunch, Dinner included\n" +
+                 "�️ Mess Facility: Breakfast, Lunch, Dinner included\n" +
                  "💰 Affordable Rates: Starting from ₹200/night\n\n" +
                  "Book early to secure your accommodation! 🎯",
         confidence: 1.0,
@@ -141,6 +128,125 @@ class ChatBotController {
       };
     }
     
+    // Hackathon and coding related questions
+    if (lowerPrompt.includes('hackathon') || lowerPrompt.includes('coding') || 
+        lowerPrompt.includes('programming') || lowerPrompt.includes('competition') ||
+        lowerPrompt.includes('contest') || lowerPrompt.includes('tech event')) {
+      return {
+        success: true,
+        response: "🏆 INNOVISION Tech Competitions:\n\n" +
+                 "💻 Hackathons: 24/48 hour coding challenges\n" +
+                 "⚡ Programming Contests: Algorithmic problem solving\n" +
+                 "🤖 Robotics Competitions: Build and compete\n" +
+                 "🧠 AI/ML Challenges: Machine learning projects\n" +
+                 "🌐 Web Development: Frontend/Backend contests\n" +
+                 "📱 App Development: Mobile app competitions\n\n" +
+                 "Win exciting prizes and showcase your skills! 🚀",
+        confidence: 1.0,
+        category: 'tech_events'
+      };
+    }
+    
+    // Cultural events related questions
+    if (lowerPrompt.includes('dance') || lowerPrompt.includes('music') || 
+        lowerPrompt.includes('cultural') || lowerPrompt.includes('dj') ||
+        lowerPrompt.includes('performance') || lowerPrompt.includes('show')) {
+      return {
+        success: true,
+        response: "💃 INNOVISION Cultural Events:\n\n" +
+                 "🕺 Dance Competitions: Solo, Group, Battle formats\n" +
+                 "🎵 Music Events: Singing, Band performances\n" +
+                 "� DJ Nights: Electronic music and beats\n" +
+                 "🎭 Drama & Theater: Acting competitions\n" +
+                 "🎤 Open Mic: Poetry, Stand-up comedy\n" +
+                 "👗 Fashion Shows: Ramp walk competitions\n\n" +
+                 "Express your creativity and win amazing prizes! ✨",
+        confidence: 1.0,
+        category: 'cultural_events'
+      };
+    }
+    
+    // Date and schedule related questions
+    if (lowerPrompt.includes('date') || lowerPrompt.includes('when') || 
+        lowerPrompt.includes('schedule') || lowerPrompt.includes('time') ||
+        lowerPrompt.includes('february') || lowerPrompt.includes('2025')) {
+      return {
+        success: true,
+        response: "� INNOVISION 2025 Schedule:\n\n" +
+                 "�️ Event Dates: February 21-23, 2025\n" +
+                 "� Venue: NIT Rourkela Campus, Odisha\n" +
+                 "⏰ Duration: 3 Days of non-stop celebration\n\n" +
+                 "Day-wise Events:\n" +
+                 "• Day 1: Opening ceremony, Tech talks, Hackathon begins\n" +
+                 "• Day 2: Competitions, Cultural events, DJ Night\n" +
+                 "• Day 3: Finals, Prize distribution, Closing ceremony\n\n" +
+                 "Mark your calendars! 🎯",
+        confidence: 1.0,
+        category: 'schedule'
+      };
+    }
+    
+    // Food related questions
+    if (lowerPrompt.includes('food') || lowerPrompt.includes('mess') || 
+        lowerPrompt.includes('dining') || lowerPrompt.includes('meal') ||
+        lowerPrompt.includes('eating') || lowerPrompt.includes('restaurant')) {
+      return {
+        success: true,
+        response: "🍽️ INNOVISION Food Arrangements:\n\n" +
+                 "🥘 Mess Facility: All meals included with accommodation\n" +
+                 "🍕 Food Stalls: Variety of local and fast food\n" +
+                 "☕ Cafeteria: Snacks, beverages, and refreshments\n" +
+                 "🥗 Options: Vegetarian, Non-vegetarian, Vegan available\n" +
+                 "🌶️ Local Cuisine: Authentic Odia delicacies\n" +
+                 "💰 Affordable: Budget-friendly pricing\n\n" +
+                 "Satisfy your taste buds while enjoying the fest! 🎉",
+        confidence: 1.0,
+        category: 'food'
+      };
+    }
+    
+    // Venue and location related questions
+    if (lowerPrompt.includes('venue') || lowerPrompt.includes('location') || 
+        lowerPrompt.includes('where') || lowerPrompt.includes('nit') ||
+        lowerPrompt.includes('rourkela') || lowerPrompt.includes('odisha')) {
+      return {
+        success: true,
+        response: "�️ INNOVISION Venue Details:\n\n" +
+                 "📍 Location: NIT Rourkela Campus, Odisha\n" +
+                 "� Campus: National Institute of Technology\n" +
+                 "🌆 City: Rourkela, Steel City of India\n" +
+                 "✈️ Nearest Airport: Rourkela Airport (15 km)\n" +
+                 "� Railway: Rourkela Junction (10 km)\n" +
+                 "🚌 Transport: Local buses and auto-rickshaws available\n\n" +
+                 "Easy to reach with excellent connectivity! 🚀",
+        confidence: 1.0,
+        category: 'venue'
+      };
+    }
+    
+    // Default INNOVISION info for general questions
+    if (lowerPrompt.includes('innovision') || lowerPrompt.includes('what is') || 
+        lowerPrompt.includes('about') || lowerPrompt.includes('tell me') ||
+        lowerPrompt.includes('info') || lowerPrompt.includes('details')) {
+      return {
+        success: true,
+        response: "🎉 INNOVISION is NIT Rourkela's flagship tech festival - Eastern India's largest technology event! 🚀\n\n" +
+                 "📅 Event Dates: February 21-23, 2025\n" +
+                 "🏛️ Venue: NIT Rourkela Campus, Odisha\n\n" +
+                 "🎯 Key Features:\n" +
+                 "• 🏆 Hackathons & Coding Competitions\n" +
+                 "• 🤖 Robotics & Tech Workshops\n" +
+                 "• 💃 Cultural Events & Dance Competitions\n" +
+                 "• 🎵 DJ Nights & Live Music\n" +
+                 "• 🏨 Accommodation Available\n" +
+                 "• 🍽️ Food & Refreshments\n\n" +
+                 "Register now and be part of this amazing tech celebration! �",
+        confidence: 1.0,
+        category: 'innovision'
+      };
+    }
+    
+    // Default response for unmatched queries
     return {
       success: true,
       response: this.getDefaultResponse(),
