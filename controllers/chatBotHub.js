@@ -132,15 +132,8 @@ class ChatBotController {
         
         score = matchCount / Math.max(promptWords.length, 1);
         
-        // Boost score for common keywords
-        if (lowerPrompt.includes('innovision')) score += 0.4;
-        if (lowerPrompt.includes('what is') && lowerPrompt.includes('innovision')) score += 0.5;
-        if (lowerPrompt.includes('register') || lowerPrompt.includes('registration')) score += 0.3;
-        if (lowerPrompt.includes('accommodation') || lowerPrompt.includes('stay')) score += 0.3;
-        if (lowerPrompt.includes('date') || lowerPrompt.includes('when')) score += 0.3;
-        if (lowerPrompt.includes('hackathon') || lowerPrompt.includes('coding')) score += 0.3;
-        if (lowerPrompt.includes('cultural') || lowerPrompt.includes('dance')) score += 0.3;
-        if (lowerPrompt.includes('food') || lowerPrompt.includes('mess')) score += 0.3;
+        // Apply keyword-based scoring boosts
+        score += this.calculateKeywordBoost(lowerPrompt);
       }
       
       if (score > highestScore) {
@@ -167,7 +160,102 @@ class ChatBotController {
     };
   }
 
+  // Keyword mapping for better matching scores
+  getKeywordMap() {
+    return {
+      // High priority keywords
+      'innovision': 0.4,
+      'what is innovision': 0.5,
+      
+      // Registration & Participation keywords
+      'registration': {
+        keywords: ['register', 'registration', 'participate', 'join', 'entry', 'fee', 'cost', 'payment', 'enroll', 'signup'],
+        boost: 0.3
+      },
+      
+      // Accommodation & Stay keywords  
+      'accommodation': {
+        keywords: ['accommodation', 'stay', 'hostel', 'room', 'lodge', 'guest house', 'dormitory', 'booking'],
+        boost: 0.3
+      },
+      
+      // Dates & Schedule keywords
+      'schedule': {
+        keywords: ['date', 'when', 'schedule', 'time', 'november', '2025', 'timing', 'calendar', 'agenda'],
+        boost: 0.3
+      },
+      
+      // Tech Events & Competitions keywords
+      'tech_events': {
+        keywords: ['hackathon', 'coding', 'programming', 'contest', 'competition', 'tech', 'robotics', 'ai', 'machine learning', 'web dev', 'software', 'algorithm'],
+        boost: 0.3
+      },
+      
+      // Cultural Events keywords
+      'cultural': {
+        keywords: ['cultural', 'dance', 'music', 'dj', 'performance', 'show', 'singing', 'band', 'concert', 'stage'],
+        boost: 0.3
+      },
+      
+      // Food & Dining keywords
+      'food': {
+        keywords: ['food', 'mess', 'dining', 'meal', 'breakfast', 'lunch', 'dinner', 'cafeteria', 'restaurant', 'snacks'],
+        boost: 0.3
+      },
+      
+      // Location & Venue keywords
+      'location': {
+        keywords: ['venue', 'location', 'where', 'nit', 'rourkela', 'odisha', 'campus', 'address', 'place', 'auditorium'],
+        boost: 0.3
+      },
+      
+      // Prizes & Rewards keywords
+      'prizes': {
+        keywords: ['prize', 'reward', 'winner', 'award', 'certificate', 'trophy', 'cash', 'medal', 'recognition'],
+        boost: 0.3
+      },
+      
+      // Transport & Travel keywords
+      'transport': {
+        keywords: ['transport', 'travel', 'bus', 'train', 'flight', 'airport', 'railway', 'reach', 'directions', 'commute'],
+        boost: 0.3
+      },
+      
+      // Contact & Information keywords
+      'contact': {
+        keywords: ['contact', 'phone', 'email', 'website', 'coordinator', 'organizer', 'help', 'support'],
+        boost: 0.3
+      },
+      
+      // Rules & Guidelines keywords
+      'rules': {
+        keywords: ['rules', 'regulations', 'guidelines', 'eligibility', 'requirements', 'criteria', 'conditions'],
+        boost: 0.3
+      }
+    };
+  }
 
+  // Calculate keyword boost score
+  calculateKeywordBoost(prompt) {
+    const keywordMap = this.getKeywordMap();
+    let totalBoost = 0;
+    
+    // Check for direct keyword matches first
+    if (prompt.includes('innovision')) totalBoost += keywordMap['innovision'];
+    if (prompt.includes('what is') && prompt.includes('innovision')) totalBoost += keywordMap['what is innovision'];
+    
+    // Check category-based keywords
+    for (const [category, config] of Object.entries(keywordMap)) {
+      if (typeof config === 'object' && config.keywords) {
+        const hasKeyword = config.keywords.some(keyword => prompt.includes(keyword));
+        if (hasKeyword) {
+          totalBoost += config.boost;
+        }
+      }
+    }
+    
+    return totalBoost;
+  }
 
   // Get a random default response
   getDefaultResponse() {
