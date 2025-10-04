@@ -61,7 +61,7 @@ class ChatBotController {
           };
         }
       } catch (aiError) {
-        console.log('Google AI failed, using training data fallback:', aiError.message);
+        // Google AI not available in production, using training data fallback silently
       }
 
       // If Google AI fails, return best training data match or default
