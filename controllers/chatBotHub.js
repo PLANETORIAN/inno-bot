@@ -41,7 +41,7 @@ class ChatBotController {
       try {
         const parts = generateQuestion(prompt);
         const model = this.genAI.getGenerativeModel({
-          model: "gemini-pro"
+          model: "gemini-2.5-flash"
         });
         
         const result = await model.generateContent({
@@ -61,7 +61,7 @@ class ChatBotController {
           };
         }
       } catch (aiError) {
-        // Google AI not available in production, using training data fallback silently
+        console.log('Google AI failed, using training data fallback:', aiError.message);
       }
 
       // If Google AI fails, return best training data match or default
@@ -174,7 +174,7 @@ class ChatBotController {
       description: "InnoBot - Your INNOVISION AI Assistant 🤖",
       specialization: "INNOVISION - Eastern India's Largest Tech Event",
       categories: ['innovision'],
-      ai_model: "Google Gemini 1.5 Flash",
+      ai_model: "Google Gemini 2.5 Flash",
       system_instruction: systemInstruction
     };
   }
