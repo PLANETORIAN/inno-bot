@@ -1,10 +1,9 @@
-import extractKeywords from "./keywordExtractor.js";
-import filterQuestions from "./questionFilter.js";
+import { questionAnswers } from "../config/trainingData.js";
 
 export default function generateQuestion(question) {
-    const keywords = extractKeywords(question);
-    const questionAnswers = filterQuestions(question, keywords);
     let completeParts = [];
+    
+    // Use all training data for context
     const dataArray = questionAnswers;
 
     for (let i = 0; i < dataArray.length; i++) {
