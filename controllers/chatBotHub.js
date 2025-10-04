@@ -201,12 +201,7 @@ const chatBotController = new ChatBotController();
 
 async function getAIResponse(req, res) {
   try {
-    console.log('Request body:', req.body);
-    console.log('Message field:', req.body.message);
-    console.log('Prompt field:', req.body.prompt);
-    
     const userMessage = req.body.message || req.body.prompt;
-    console.log('Final message:', userMessage);
     
     if (!userMessage) {
       return res.status(400).json({ 
