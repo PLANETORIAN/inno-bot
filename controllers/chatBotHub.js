@@ -33,8 +33,9 @@ class ChatBotController {
 
       const parts = generateQuestion(prompt);
 
-      // For now, return a predefined response since Google AI model is having issues
-      return this.getINNOVISIONResponse(prompt);
+      const model = this.genAI.getGenerativeModel({
+        model: "gemini-pro"
+      });
       
       let attempts = 0;
       const maxAttempts = 6;
@@ -43,7 +44,11 @@ class ChatBotController {
       while (attempts < maxAttempts) {
         console.log("Attempt No:", attempts);
         try {
-          result = await model.generateContent(prompt);
+          result = await model.generateContent({
+            contents: [{ role: "user", parts: parts || [] }],
+            safetySettings,
+            generationConfig,
+          });
 
           if (result.response) {
             break;
