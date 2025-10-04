@@ -18,7 +18,7 @@ class ChatBotController {
     this.genAI = genAI;
   }
 
-  // Process user input using Google Generative AI
+  // Process user input using training data and fallback to Google AI
   async processMessage(userMessage) {
     try {
       const prompt = userMessage;
@@ -31,55 +31,47 @@ class ChatBotController {
         };
       }
 
-      const parts = generateQuestion(prompt);
+      // First try to get response from training data
+      const trainingResponse = await this.getTrainingDataResponse(prompt);
+      if (trainingResponse.confidence > 0.7) {
+        return trainingResponse;
+      }
 
-      const model = this.genAI.getGenerativeModel({
-        model: "gemini-pro"
-      });
-      
-      let attempts = 0;
-      const maxAttempts = 6;
-      let result;
-      
-      while (attempts < maxAttempts) {
-        console.log("Attempt No:", attempts);
-        try {
-          result = await model.generateContent({
-            contents: [{ role: "user", parts: parts || [] }],
-            safetySettings,
-            generationConfig,
-          });
+      // If no good match in training data, try Google AI as fallback
+      try {
+        const parts = generateQuestion(prompt);
+        const model = this.genAI.getGenerativeModel({
+          model: "gemini-pro"
+        });
+        
+        const result = await model.generateContent({
+          contents: [{ role: "user", parts: parts || [] }],
+          safetySettings,
+          generationConfig,
+        });
 
-          if (result.response) {
-            break;
-          }
-        } catch (error) {
-          if (error.status === 429) {
-            const retryAfter = Math.pow(2, attempts) * 2000;
-            await new Promise((resolve) =>
-              setTimeout(resolve, retryAfter)
-            );
-            attempts++;
-          } else {
-            throw error;
-          }
+        if (result && result.response) {
+          const responseText = result.response.text();
+          return {
+            success: true,
+            response: responseText,
+            confidence: 1.0,
+            category: 'ai_generated',
+            matched_question: prompt
+          };
         }
+      } catch (aiError) {
+        console.log('Google AI failed, using training data fallback:', aiError.message);
       }
 
-      if (!result || !result.response) {
-        throw new Error(
-          "Max attempts exceeded or no response from the server"
-        );
-      }
-
-      const responseText = result.response.text();
-      return {
+      // If Google AI fails, return best training data match or default
+      return trainingResponse.confidence > 0 ? trainingResponse : {
         success: true,
-        response: responseText,
-        confidence: 1.0,
-        category: 'innovision',
-        matched_question: prompt
+        response: this.getDefaultResponse(),
+        confidence: 0.5,
+        category: 'default'
       };
+
     } catch (error) {
       console.error('Error processing message:', error);
       return {
@@ -92,6 +84,75 @@ class ChatBotController {
   }
 
 
+
+  // Get response from training data using keyword matching
+  async getTrainingDataResponse(prompt) {
+    const lowerPrompt = prompt.toLowerCase();
+    const { questionAnswers } = await import("../config/trainingData.js");
+    
+    let bestMatch = null;
+    let highestScore = 0;
+    
+    // Check each training question for matches
+    for (const qa of questionAnswers) {
+      const questionLower = qa.question.toLowerCase();
+      let score = 0;
+      
+      // Exact question match gets highest score
+      if (questionLower === lowerPrompt) {
+        score = 1.0;
+      }
+      // Partial question match
+      else if (questionLower.includes(lowerPrompt) || lowerPrompt.includes(questionLower)) {
+        score = 0.9;
+      }
+      // Keyword matching
+      else {
+        const promptWords = lowerPrompt.split(' ');
+        const questionWords = questionLower.split(' ');
+        let matchCount = 0;
+        
+        for (const word of promptWords) {
+          if (word.length > 2 && questionWords.some(qw => qw.includes(word) || word.includes(qw))) {
+            matchCount++;
+          }
+        }
+        
+        score = matchCount / Math.max(promptWords.length, 1);
+        
+        // Boost score for common keywords
+        if (lowerPrompt.includes('innovision')) score += 0.3;
+        if (lowerPrompt.includes('register') || lowerPrompt.includes('registration')) score += 0.2;
+        if (lowerPrompt.includes('accommodation') || lowerPrompt.includes('stay')) score += 0.2;
+        if (lowerPrompt.includes('date') || lowerPrompt.includes('when')) score += 0.2;
+        if (lowerPrompt.includes('hackathon') || lowerPrompt.includes('coding')) score += 0.2;
+        if (lowerPrompt.includes('cultural') || lowerPrompt.includes('dance')) score += 0.2;
+        if (lowerPrompt.includes('food') || lowerPrompt.includes('mess')) score += 0.2;
+      }
+      
+      if (score > highestScore) {
+        highestScore = score;
+        bestMatch = qa;
+      }
+    }
+    
+    if (bestMatch && highestScore > 0.3) {
+      return {
+        success: true,
+        response: bestMatch.answer,
+        confidence: highestScore,
+        category: 'training_data',
+        matched_question: bestMatch.question
+      };
+    }
+    
+    return {
+      success: true,
+      response: this.getDefaultResponse(),
+      confidence: 0,
+      category: 'default'
+    };
+  }
 
   // Get INNOVISION specific response
   getINNOVISIONResponse(prompt) {
