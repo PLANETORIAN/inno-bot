@@ -5,11 +5,11 @@ export const questionAnswers = [
   },
   {
     "question": "When is INNOVISION 2025?",
-    "answer": "INNOVISION 2025 will be held from February 21-23, 2025! 📅 Three amazing days of non-stop tech celebrations, competitions, workshops, and cultural events at NIT Rourkela campus. Mark your calendars for this incredible tech festival! ✨"
+    "answer": "INNOVISION 2025 will be held from November 7-9, 2025! 📅 Three amazing days of non-stop tech celebrations, competitions, workshops, and cultural events at NIT Rourkela campus. Mark your calendars for this incredible tech festival! ✨"
   },
   {
     "question": "What are the event dates for INNOVISION?",
-    "answer": "INNOVISION 2025 is scheduled for February 21-23, 2025! 🗓️ It's a 3-day extravaganza featuring hackathons, coding competitions, robotics events, cultural shows, and tech workshops. Don't miss this amazing opportunity to showcase your skills! 🎊"
+    "answer": "INNOVISION 2025 is scheduled for November 7-9, 2025! 🗓️ It's a 3-day extravaganza featuring hackathons, coding competitions, robotics events, cultural shows, and tech workshops. Don't miss this amazing opportunity to showcase your skills! 🎊"
   },
   {
     "question": "Where is INNOVISION held?",
@@ -29,7 +29,7 @@ export const questionAnswers = [
   },
   {
     "question": "Is accommodation available for INNOVISION?",
-    "answer": "Yes! Accommodation is available at NIT Rourkela for outstation participants! 🏨 We offer hostel rooms, guest houses with shared/double rooms, AC/Non-AC options. Mess facility provides breakfast, lunch, and dinner. Affordable rates starting from ₹200/night. Book early to secure your stay! 🛏️"
+    "answer": "Absolutely! We provide accommodation at NIT Rourkela for all outstation participants! 🏨 We offer comfortable hostel rooms, guest houses with shared/double rooms, AC/Non-AC options. Mess facility provides breakfast, lunch, and dinner. Affordable rates starting from ₹200/night. Book early to secure your stay! 🛏️"
   },
   {
     "question": "Where can I stay during INNOVISION?",
@@ -121,7 +121,7 @@ export const questionAnswers = [
   },
   {
     "question": "What is the schedule for INNOVISION 2025?",
-    "answer": "INNOVISION 2025 runs February 21-23! 📅 Day 1: Opening ceremony, tech talks, hackathon kickoff. Day 2: Main competitions, cultural events, workshops, DJ night. Day 3: Finals, prize distribution, closing ceremony. Three days of non-stop tech celebration! ⏰"
+    "answer": "INNOVISION 2025 runs November 7-9! 📅 Day 1: Opening ceremony, tech talks, hackathon kickoff. Day 2: Main competitions, cultural events, workshops, DJ night. Day 3: Finals, prize distribution, closing ceremony. Three days of non-stop tech celebration! ⏰"
   },
   {
     "question": "What time do events start?",
@@ -153,7 +153,7 @@ export const questionAnswers = [
   },
   {
     "question": "What is the duration of INNOVISION?",
-    "answer": "INNOVISION 2025 spans 3 full days from February 21-23, 2025! ⏰ Each day packed with events from morning 9 AM till midnight. Hackathons run for 24/48 hours, workshops throughout the day, and cultural events in the evenings. Non-stop tech celebration! 🎊"
+    "answer": "INNOVISION 2025 spans 3 full days from November 7-9, 2025! ⏰ Each day packed with events from morning 9 AM till midnight. Hackathons run for 24/48 hours, workshops throughout the day, and cultural events in the evenings. Non-stop tech celebration! 🎊"
   },
   {
     "question": "Are there team events?",
