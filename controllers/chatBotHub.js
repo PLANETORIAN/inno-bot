@@ -33,7 +33,19 @@ class ChatBotController {
 
       // First try to get response from training data
       const trainingResponse = await this.getTrainingDataResponse(prompt);
-      if (trainingResponse.confidence > 0.7) {
+      
+      // For gibberish/random input, always use default response
+      if (prompt.length < 3 || /^[bcdfghjklmnpqrstvwxyz]{5,}$/i.test(prompt.replace(/\s/g, ''))) {
+        return {
+          success: true,
+          response: this.getDefaultResponse(),
+          confidence: 0.5,
+          category: 'default'
+        };
+      }
+      
+      // Use training data for any reasonable match
+      if (trainingResponse.confidence > 0.3) {
         return trainingResponse;
       }
 
@@ -121,13 +133,14 @@ class ChatBotController {
         score = matchCount / Math.max(promptWords.length, 1);
         
         // Boost score for common keywords
-        if (lowerPrompt.includes('innovision')) score += 0.3;
-        if (lowerPrompt.includes('register') || lowerPrompt.includes('registration')) score += 0.2;
-        if (lowerPrompt.includes('accommodation') || lowerPrompt.includes('stay')) score += 0.2;
-        if (lowerPrompt.includes('date') || lowerPrompt.includes('when')) score += 0.2;
-        if (lowerPrompt.includes('hackathon') || lowerPrompt.includes('coding')) score += 0.2;
-        if (lowerPrompt.includes('cultural') || lowerPrompt.includes('dance')) score += 0.2;
-        if (lowerPrompt.includes('food') || lowerPrompt.includes('mess')) score += 0.2;
+        if (lowerPrompt.includes('innovision')) score += 0.4;
+        if (lowerPrompt.includes('what is') && lowerPrompt.includes('innovision')) score += 0.5;
+        if (lowerPrompt.includes('register') || lowerPrompt.includes('registration')) score += 0.3;
+        if (lowerPrompt.includes('accommodation') || lowerPrompt.includes('stay')) score += 0.3;
+        if (lowerPrompt.includes('date') || lowerPrompt.includes('when')) score += 0.3;
+        if (lowerPrompt.includes('hackathon') || lowerPrompt.includes('coding')) score += 0.3;
+        if (lowerPrompt.includes('cultural') || lowerPrompt.includes('dance')) score += 0.3;
+        if (lowerPrompt.includes('food') || lowerPrompt.includes('mess')) score += 0.3;
       }
       
       if (score > highestScore) {
