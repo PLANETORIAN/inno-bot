@@ -315,7 +315,7 @@ export const questionAnswers = [
 
 
 
-  ,{
+  {
     "question": "What is the War of Machine event by Game To Aim (GTA)?",
     "answer": "War of Machine is a Gaming Showcase and Competition featuring competitive gameplay.\nRulebook: https://drive.google.com/open?id=1o9uMGHC0zRmgkAfGKpzwN1F6vctvS6WE"
   },
