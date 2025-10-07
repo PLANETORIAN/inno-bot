@@ -28,6 +28,98 @@ export const questionAnswers = [
     "answer": "Participation costs ₹500 per person as registration fee! 💰 This includes access to all events, workshops, and competitions. Team registrations are available for group events. Payment methods include UPI, cards, and net banking. Early bird discounts available! 🎯"
   },
   {
+    "question": "What is Case Carnival?",
+    "answer": "Case Carnival is organised by the Analytics and Consulting Club. It is a case study making event focused on consulting and strategy."
+  },
+  {
+    "question": "What is Satquest (Satellite in Distress)?",
+    "answer": "Organised by Parikramaka, this event is an exciting challenge around satellite and space technology. Participants solve riddles and puzzles to repair a virtual satellite, culminating in a hands-on stability challenge. It requires quick thinking and problem-solving ability."
+  },
+  {
+    "question": "What is Sunken Cipher?",
+    "answer": "Sunken Cipher is conducted by the Algorithmic and Programming Society (APS). Participants navigate a grid, solving algorithmic and logic puzzles to uncover a cipher in a timed underwater-themed setting."
+  },
+  {
+    "question": "What is Velocity Vortex?",
+    "answer": "Organised by ASME NIT Rourkela Student Section, Velocity Vortex is a vehicle-racing competition where teams must complete an obstacle course for the fastest time. Extra points are awarded for payload pick-up and deposit."
+  },
+  {
+    "question": "What is Design Dash!!?",
+    "answer": "Design Dash!! is hosted by Design Tab. It's a series of quick, fun design mini-events involving doodling, font matching, colour hunts, and paper plane making. All participants are welcome and every mini-event is time-based."
+  },
+  {
+    "question": "What is Roadies: The Food Saga 3.0?",
+    "answer": "This event is by the Food Tech Society and tests teamwork, food knowledge, and sensory skills through competitive rounds: a cookie challenge, trivia, and blindfolded food identification. Only provided materials are allowed and scoring favours taste and memory."
+  },
+  {
+    "question": "What is Hydronaut?",
+    "answer": "Hydronaut is organised by ASME NIT Rourkela. Teams qualify through a Marine Matrix quiz and then build DIY submarines to navigate a water tank. The event tests engineering, stability, and creative problem-solving."
+  },
+  {
+    "question": "What is Shake It Off?",
+    "answer": "Held by CEST, Shake It Off is a technical event where teams build model structures using sticks and thermocol to test for stability, load-bearing and earthquake resistance."
+  },
+  {
+    "question": "What is the IPL auction event?",
+    "answer": "Organised by Ecell, this event includes a quiz and a mock IPL auction. Teams bid for players with a set purse and squad size, following auction rules similar to real IPL franchises."
+  },
+  {
+    "question": "What is Frame It Out?",
+    "answer": "Frame It Out from CEST is a civil engineering themed photography contest. Participants capture and submit images that reflect innovative structures and sustainability, posting them on Instagram and submitting them via a Google Form."
+  },
+  {
+    "question": "What is OMEGA?",
+    "answer": "Organised by AXIOM, OMEGA is a QR-based treasure hunt. Participants solve clues at checkpoints by scanning codes to advance towards the final prize."
+  },
+  {
+    "question": "What is PSI-PHI?",
+    "answer": "PSI-PHI, by AXIOM, is a business-themed hackathon. It starts with a quiz and leads qualifying teams into solving and presenting solutions to real-world problems."
+  },
+  {
+    "question": "What is Little Science Yard?",
+    "answer": "Little Science Yard by Aasra is a science exhibition where students from Rourkela display projects. Judging is conducted by faculty and top projects win prizes."
+  },
+  {
+    "question": "What is Alloy Auction?",
+    "answer": "Run by STEELLUN, the Alloy Auction combines bidding and engineering. Teams solve technical challenges by purchasing appropriate materials, aiming to make the smartest, most resourceful choices possible."
+  },
+  {
+    "question": "What is SRIJAN?",
+    "answer": "SRIJAN, hosted by SSPA, is Innovision’s central exhibition. It features interactive art installations, drawings, paintings, and optical illusions, showcasing architectural and artistic innovation."
+  },
+  {
+    "question": "What is Mazehunt?",
+    "answer": "Mazehunt is a Genesys event where pairs solve questions and check in at various maze points. Volunteers ensure proper gameplay, and the end features fun challenges determining final winners."
+  },
+  {
+    "question": "What is Bioventures: The Pitchdeck Showdown?",
+    "answer": "Organised by Genesys, this is a pitch competition at the intersection of science and entrepreneurship. Teams identify a bioengineering challenge, design a solution, and present a commercialisable pitch in front of judges."
+  },
+  {
+    "question": "What is Weird Bazar?",
+    "answer": "Weird Bazar, by Grapevine – The Business Club, is a playful marketplace simulation. Teams compete as buyers and sellers with unusual products, fake currency, taxes, auctions, and surprise rules."
+  },
+  {
+    "question": "What is Spark-a-thon?",
+    "answer": "Spark-a-thon is a hackathon by Short Circuit. Teams build water monitoring systems using Arduino and sensors, incorporating machine learning for aquatic ecosystem analysis. Original code and safe design are required for all rounds."
+  },
+  {
+    "question": "What is The Missing CEO?",
+    "answer": "The Missing CEO, by Grapevine – The Business Club, is a business-themed mystery. Participants act as investigators, solving puzzles and collecting evidence to unravel a simulated corporate disappearance."
+  },
+  {
+    "question": "What is the Workshop on Introduction to GPU?",
+    "answer": "Short Circuit's GPU workshop covers fundamentals of modern graphics processors, parallel processing, and real-world applications in AI, gaming, and high-performance computing."
+  },
+  {
+    "question": "What is Prompt Abyss?",
+    "answer": "ML4E hosts Prompt Abyss, where participants recreate a target image using text prompts, submitting their attempts online. Each has a strict timer and originality is strictly enforced."
+  },
+  {
+    "question": "What is In-Verse (IDEATHON)?",
+    "answer": "INSPIRE's In-Verse (IDEATHON) involves three rounds: an online PPT submission, an idea pitching session, and a final offline pitch, supporting innovation and problem-solving."
+  },
+  {
     "question": "Is accommodation available for INNOVISION?",
     "answer": "Absolutely! We provide accommodation at NIT Rourkela for all outstation participants! 🏨 We offer comfortable hostel rooms, guest houses with shared/double rooms, AC/Non-AC options. Mess facility provides breakfast, lunch, and dinner. Affordable rates starting from ₹200/night. Book early to secure your stay! 🛏️"
   },
