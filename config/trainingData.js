@@ -262,5 +262,165 @@ export const questionAnswers = [
   {
     "question": "What is In-Verse (IDEATHON)?",
     "answer": "INSPIRE's In-Verse (IDEATHON) involves three rounds: an online PPT submission, an idea pitching session, and a final offline pitch, supporting innovation and problem-solving."
+  },
+
+  {
+    "question": "What are some events at Innovision?",
+    "answer": "Innovision features a variety of events including Case Carnival, Sunken Cipher, Velocity Vortex, Design Dash!!, Roadies: The Food Saga 3.0, Hydronaut, Shake It Off, IPL Auction, Frame It Out, OMEGA, PSI-PHI, Little Science Yard, Alloy Auction, SRIJAN, Mazehunt, Bioventures: The Pitchdeck Showdown, Weird Bazar, Spark-a-thon, The Missing CEO, Workshop on GPU, Prompt Abyss, and In-Verse (IDEATHON)."
+  },
+  {
+    "question": "What are the tech events at Innovision?",
+    "answer": "Tech events include Sunken Cipher (algorithmic puzzles), Velocity Vortex (vehicle obstacle race), Hydronaut (DIY submarine challenge), Shake It Off (model structures for earthquake resistance), Spark-a-thon (hardware hackathon with Arduino and sensors), Prompt Abyss (AI text-to-image challenge), and the Workshop on Introduction to GPU, covering modern computing advances."
+  },
+  {
+    "question": "What are the cultural or creative events at Innovision?",
+    "answer": "Cultural and creative events include SRIJAN (exhibition of art, photography, and illusions), Design Dash!! (mini design games), Frame It Out (photography on civil engineering themes), and Mazehunt (maze with general knowledge challenges)."
+  },
+  {
+    "question": "Are there dance or music events at Innovision?",
+    "answer": "The provided event details do not list dedicated dance or music competitions among the official events. However, cultural showcases might be present elsewhere in the festival lineup or through proshows."
+  },
+  {
+    "question": "Which events are related to space or astronomy?",
+    "answer": "Satquest (Satellite in Distress), organised by Parikramaka, is a prominent event revolving around satellite and space technology, featuring riddles, problem-solving, and physics-based challenges in a competitive format."
+  },
+  {
+    "question": "Are there any robotics events at Innovision?",
+    "answer": "There is no robotics-specific event listed among the provided Innovision official events for this edition. Focused engineering contests include Velocity Vortex (vehicle design) and Hydronaut (DIY submarines)."
+  },
+  {
+    "question": "What are the hackathon events at Innovision?",
+    "answer": "The main hackathon event is Spark-a-thon, a multi-round challenge using Arduino-based systems and machine learning tools to solve real-world water monitoring problems. PSI-PHI is also a business hackathon combining quizzes and entrepreneurial case-solving."
+  },
+  {
+    "question": "Which events focus on business or entrepreneurship?",
+    "answer": "Business and entrepreneurship-centered events include Case Carnival (consulting case study), Weird Bazar (marketplace simulation), The Missing CEO (business-themed mystery investigation), PSI-PHI (business hackathon), and Bioventures: The Pitchdeck Showdown (science entrepreneurship pitching)."
+  },
+  {
+    "question": "Which events involve art, photography, or design?",
+    "answer": "SRIJAN (architectural and art exhibition), Frame It Out (photography contest), and Design Dash!! (design-themed mini games) are dedicated to creativity and visual arts."
+  },
+  {
+    "question": "Are there puzzle, treasure hunt, or maze events?",
+    "answer": "OMEGA is a classic QR-based treasure hunt, Mazehunt combines maze navigation and trivia, while Sunken Cipher blends algorithmic puzzles in a grid format."
+  },
+  {
+    "question": "Are there food-related competitions?",
+    "answer": "Roadies: The Food Saga 3.0 is a food-themed event with rounds including taste tests, trivia, and cooking challenges to test sensory and culinary knowledge."
+  },
+
+
+
+
+
+
+
+  ,{
+    "question": "What is the War of Machine event by Game To Aim (GTA)?",
+    "answer": "War of Machine is a Gaming Showcase and Competition featuring competitive gameplay.\nRulebook: https://drive.google.com/open?id=1o9uMGHC0zRmgkAfGKpzwN1F6vctvS6WE"
+  },
+  {
+    "question": "Tell me about Stellar Night by AstroNITR.",
+    "answer": "Stellar Night is an astronomy event with professional grade telescopes for stargazing, open to all.\nRulebook: https://drive.google.com/open?id=14bg7J7XlECeqbm9cgJqs3TE6uSEFiKkj"
+  },
+  {
+    "question": "What are the events organised by Grapevine – The Business Club?",
+    "answer": "The events are The Missing CEO: An International Business Mystery and Weird Bazar – The Quirky Marketplace Challenge.\nRules for The Missing CEO: https://drive.google.com/open?id=1oq4CwCVRsyeDrhruZ7BpOJlie8qe8vBj\nRules for Weird Bazar: https://drive.google.com/open?id=1QaplsnZFUySntg1yxBXfnnQgVL_7vIoX"
+  },
+  {
+    "question": "What is Roadies: The Food Saga 3.0 by Food Tech Society?",
+    "answer": "Roadies is a food-themed competition testing teamwork, food knowledge, and sensory skills.\nRulebook: https://drive.google.com/open?id=1isZEzCzInV1h52f1_Qtrjk-MKWoswJBv"
+  },
+  {
+    "question": "What are Snapstrix and Matrix Mystery Mania organized by MATRIX CLUB?",
+    "answer": "Snapstrix is a unique event, and Matrix Mystery Mania (3M) is a challenging mystery event.\nSnapstrix rules: https://drive.google.com/open?id=1Vs-p1Z4C1GxH_XF4yaNJAoXLBXh4sblz\n3M rules: https://drive.google.com/open?id=17MTDBwKGf1EkxtjLEZEOkYXjONLD19Oh"
+  },
+  {
+    "question": "Tell me about Omega and Psi-Phi by AXIOM club.",
+    "answer": "Omega is a treasure hunt with multiple rounds testing math, logic, and reasoning.\nPsi-Phi is a two-stage business hackathon starting with a quiz round and a final presentation.\nOmega rules: https://drive.google.com/open?id=1C1tiehhvNpawXhg6oDBNHxeOkGBf0n9n\nPsi-Phi rules: https://drive.google.com/open?id=12G7Py4_8-HYS7g5CQQ3N6M5if7rcfsyD"
+  },
+  {
+    "question": "What is the Alloy Auction by STEELLUN?",
+    "answer": "The Alloy Auction combines problem-solving with bidding strategies in an engineering competition.\nRulebook: https://drive.google.com/open?id=1IxUm4dOiJMdwIjUyiC_4v8CXhQeW-IXLxcoPKK1gbVk"
+  },
+  {
+    "question": "What are the Velocity Vortex and Hydronaut events by ASME NIT Rourkela Student Section?",
+    "answer": "Velocity Vortex is a vehicle obstacle course racing event.\nHydronaut involves building DIY submarines to navigate a water tank.\nVelocity Vortex rules: https://drive.google.com/open?id=1OE7cQlz3ALCiuxN6cTZSs3n-J7hiSmSX\nHydronaut rules: https://drive.google.com/open?id=18obLXFD1GCOGPN6sTFnpXr_-0QnOqAJg"
+  },
+  {
+    "question": "Describe Mazehunt and Bioventure: The Pitchdeck Showdown by Genesys.",
+    "answer": "Mazehunt involves navigating a maze with trivia questions and fun challenges.\nBioventure is a pitch competition focused on bioengineering solutions.\nMazehunt rules: https://drive.google.com/open?id=1QCLM9OSkjEnw_aksCTnNgmdXDDWUXlus\nBioventure rules: https://drive.google.com/open?id=1VWb2eXmGVQ9b6_S_nr6StnGvhyWci6Lu"
+  },
+  {
+    "question": "What is the AI Image Generation Challenge by ML4E?",
+    "answer": "Participants must recreate target images using text prompts.\nRulebook: https://drive.google.com/open?id=1_Xtv3ClLndAZTbmD-sNVTKXVSkJX_dIy"
+  },
+  {
+    "question": "Tell me about Design Dash!! by Design Tab.",
+    "answer": "A series of fun, quick design mini-events testing creativity under time limits.\nRulebook: https://drive.google.com/open?id=18y_Xapj6WQRWnxIaQJnY-xijJwe9kRzv"
+  },
+  {
+    "question": "What is Sunken Cipher by Algorithmic and Programming Society?",
+    "answer": "A thrilling underwater-themed puzzle event involving algorithmic challenges.\nRulebook: https://drive.google.com/open?id=1fIAlpIi1yaXyN8--i8uh5NEz-F50Kq0q"
+  },
+  {
+    "question": "What are Intelligent Trader 11.0 and Chaupaal by Cognizen Club?",
+    "answer": "Intelligent Trader 11.0 is a trading simulation event.\nChaupaal is a discussion and quiz event focusing on business and strategy.\nIntelligent Trader rules: https://drive.google.com/open?id=1ZVAqAo4a4ATYLubTsYKHtfD9CAATVp7B\nChaupaal rules: https://drive.google.com/open?id=1W8k_sqKUpojVsBeh43QrXkrGHS9yF2n3"
+  },
+  {
+    "question": "Describe RADIANCE by AKRITI.",
+    "answer": "RADIANCE is a cultural extravaganza focused on performing arts.\nRulebook: https://drive.google.com/open?id=10Hym4b-rGLop0iVT3uYxzN_xas9kLsNM"
+  },
+  {
+    "question": "What is Escape Room 3.0 by Printstation?",
+    "answer": "An interactive escape room challenge with puzzles and riddles.\nRulebook: https://drive.google.com/open?id=129IBFcuWIfp5KYADPAmTDa2slAamcH4L"
+  },
+  {
+    "question": "What is Case Matrix by Analytics and Consulting Club?",
+    "answer": "A case study competition involving consulting and problem solving.\nRulebook: https://drive.google.com/open?id=1QmeuvuAk56KSbLpq-i0N0c0qJ-BUwlla"
+  },
+  {
+    "question": "Tell me about OpenChase by OpenCode.",
+    "answer": "A coding competition where participants solve problems in a race against time.\nRulebook: https://drive.google.com/open?id=1YM5wVtxW0W_McXvi1p9NZGzbqQ8fW8tv"
+  },
+  {
+    "question": "What are Shake it Off and Frame it Out by CEST?",
+    "answer": "Shake it Off involves constructing model structures tested for stability.\nFrame it Out is a photography contest focused on civil engineering themes.\nShake it Off rules: https://drive.google.com/open?id=1JqZISui5ZiPmedZSs5B_jYu4CgFYWdcEdfWvtrFlK6c\nFrame it Out rules: https://drive.google.com/open?id=1VsUXihU9FPADr0mNFU-qpIICkzQVhHoBVbKp51GrGQM"
+  },
+  {
+    "question": "Describe the Sci-Biz-Tech Quiz by INQUIZZITIVE.",
+    "answer": "An interactive quiz covering science, business, and technology topics.\nRulebook: https://drive.google.com/open?id=1664sjNvNpF8fyiJeBS9oZffaVv3kcLiw"
+  },
+  {
+    "question": "What is CeraMarin Quiz by Incers NITR?",
+    "answer": "A marine science-themed quiz competition.\nRulebook: https://drive.google.com/open?id=1jPbVZ2HXAXc-wZFRtQ2z9DMxqGiwlvbs"
+  },
+  {
+    "question": "Tell me about Vibe with 3D and Model Mania by 3D (Data, Design and Development).",
+    "answer": "Vibe with 3D is a design event involving 3D modelling.\nModel Mania is a model making and creative design competition.\nVibe with 3D rules: https://drive.google.com/open?id=1fAHnK9udMlBqkQn38qjnYj2SruVascKg\nModel Mania rules: https://drive.google.com/open?id=1_sNK3qS0FcjQsZWgZDknHMAKa52gwhA6"
+  },
+  {
+    "question": "What is the IPL Auction event by E-Cell?",
+    "answer": "A mock Indian Premier League auction competition with rules and bidding strategies.\nRulebook: https://drive.google.com/open?id=1zGi-rBKLgNGtfzp3IEB9NVLe5X1V4aBfeTerrj_9AVY"
+  },
+  {
+    "question": "Describe Aeroprix and Hovermania by Udaan club.",
+    "answer": "Aeroprix is an aero-modeling competition.\nHovermania is a drone flying challenge.\nAeroprix rules: https://drive.google.com/open?id=1qBOgQW_nJcV_97YO2dCxKvqi8l41NROA\nHovermania rules: https://drive.google.com/open?id=12lxAFPTZNPYtU5vmWtySvC8dQ1Nvtj8i"
+  },
+  {
+    "question": "What is Spark-a-thon by Short Circuit?",
+    "answer": "A hardware hackathon involving Arduino and sensor-based projects.\nRulebook: https://drive.google.com/open?id=1zxJk7imALlQrpDvVOQMPNd7bQWajoBaj"
+  },
+  {
+    "question": "Tell me about Virtual Racing Simulator Competition and Ignition Grand Prix by Society of Automotive Engineers.",
+    "answer": "Virtual Racing Simulator Competition involves racing simulators.\nIgnition Grand Prix is a grand racing event with real-time vehicles.\nVirtual Racing rules: https://drive.google.com/open?id=1sgRbZTzO6rBetlPO12y-9XpQV9osn-xVhxiLvoyokmw\nIgnition Grand Prix rules: https://drive.google.com/open?id=1AsKKNrBXmV9gICn-V97-PUPq8B7j0Jc0SWRRfMSFaGU"
+  },
+  {
+    "question": "What is Car Show by Society Of Automotive Engineers (SAE)?",
+    "answer": "An exhibition showcasing custom and race cars.\nRulebook: https://drive.google.com/open?id=18mcC_AiWpQM-kARmcbPj9-7swnZR77tj"
+  },
+  {
+    "question": "Describe Satquest (satellite in distress) by Parikramaka.",
+    "answer": "A satellite repair challenge involving puzzles, riddles, and hands-on problem solving.\nRulebook: https://drive.google.com/open?id=13pauM16nMhYSbIhzzKrgrHpcJVaQ3HHW"
   }
 ]
