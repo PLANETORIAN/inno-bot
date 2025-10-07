@@ -173,51 +173,51 @@ export const questionAnswers = [
 
   {
     "question": "What is Case Carnival?",
-    "answer": "Case Carnival is organised by the Analytics and Consulting Club. It is a case study making event focused on consulting and strategy."
+    "answer": "Case Carnival is organised by the Analytics and Consulting Club. It is a case study making event focused on consulting and strategy. \nRulebook: https://drive.google.com/open?id=1QmeuvuAk56KSbLpq-i0N0c0qJ-BUwlla"
   },
   {
     "question": "What is Satquest (Satellite in Distress)?",
-    "answer": "Organised by Parikramaka, this event is an exciting challenge around satellite and space technology. Participants solve riddles and puzzles to repair a virtual satellite, culminating in a hands-on stability challenge. It requires quick thinking and problem-solving ability."
+    "answer": "Organised by Parikramaka, this event is an exciting challenge around satellite and space technology. Participants solve riddles and puzzles to repair a virtual satellite, culminating in a hands-on stability challenge. It requires quick thinking and problem-solving ability. \nRulebook: https://drive.google.com/open?id=13pauM16nMhYSbIhzzKrgrHpcJVaQ3HHW"
   },
   {
     "question": "What is Sunken Cipher?",
-    "answer": "Sunken Cipher is conducted by the Algorithmic and Programming Society (APS). Participants navigate a grid, solving algorithmic and logic puzzles to uncover a cipher in a timed underwater-themed setting."
+    "answer": "Sunken Cipher is conducted by the Algorithmic and Programming Society (APS). Participants navigate a grid, solving algorithmic and logic puzzles to uncover a cipher in a timed underwater-themed setting. \nRulebook: https://drive.google.com/open?id=1fIAlpIi1yaXyN8--i8uh5NEz-F50Kq0q"
   },
   {
     "question": "What is Velocity Vortex?",
-    "answer": "Organised by ASME NIT Rourkela Student Section, Velocity Vortex is a vehicle-racing competition where teams must complete an obstacle course for the fastest time. Extra points are awarded for payload pick-up and deposit."
+    "answer": "Organised by ASME NIT Rourkela Student Section, Velocity Vortex is a vehicle-racing competition where teams must complete an obstacle course for the fastest time. Extra points are awarded for payload pick-up and deposit. \nRulebook: https://drive.google.com/open?id=1OE7cQlz3ALCiuxN6cTZSs3n-J7hiSmSX"
   },
   {
     "question": "What is Design Dash!!?",
-    "answer": "Design Dash!! is hosted by Design Tab. It's a series of quick, fun design mini-events involving doodling, font matching, colour hunts, and paper plane making. All participants are welcome and every mini-event is time-based."
+    "answer": "Design Dash!! is hosted by Design Tab. It's a series of quick, fun design mini-events involving doodling, font matching, colour hunts, and paper plane making. All participants are welcome and every mini-event is time-based. \nRulebook: https://drive.google.com/open?id=18y_Xapj6WQRWnxIaQJnY-xijJwe9kRzv"
   },
   {
     "question": "What is Roadies: The Food Saga 3.0?",
-    "answer": "This event is by the Food Tech Society and tests teamwork, food knowledge, and sensory skills through competitive rounds: a cookie challenge, trivia, and blindfolded food identification. Only provided materials are allowed and scoring favours taste and memory."
+    "answer": "This event is by the Food Tech Society and tests teamwork, food knowledge, and sensory skills through competitive rounds: a cookie challenge, trivia, and blindfolded food identification. Only provided materials are allowed and scoring favours taste and memory. \nRulebook: https://drive.google.com/open?id=1isZEzCzInV1h52f1_Qtrjk-MKWoswJBv"
   },
   {
     "question": "What is Hydronaut?",
-    "answer": "Hydronaut is organised by ASME NIT Rourkela. Teams qualify through a Marine Matrix quiz and then build DIY submarines to navigate a water tank. The event tests engineering, stability, and creative problem-solving."
+    "answer": "Hydronaut is organised by ASME NIT Rourkela. Teams qualify through a Marine Matrix quiz and then build DIY submarines to navigate a water tank. The event tests engineering, stability, and creative problem-solving. \nRulebook: https://drive.google.com/open?id=18obLXFD1GCOGPN6sTFnpXr_-0QnOqAJg"
   },
   {
     "question": "What is Shake It Off?",
-    "answer": "Held by CEST, Shake It Off is a technical event where teams build model structures using sticks and thermocol to test for stability, load-bearing and earthquake resistance."
+    "answer": "Held by CEST, Shake It Off is a technical event where teams build model structures using sticks and thermocol to test for stability, load-bearing and earthquake resistance. \nRulebook: https://drive.google.com/open?id=1JqZISui5ZiPmedZSs5B_jYu4CgFYWdcEdfWvtrFlK6c"
   },
   {
     "question": "What is the IPL auction event?",
-    "answer": "Organised by Ecell, this event includes a quiz and a mock IPL auction. Teams bid for players with a set purse and squad size, following auction rules similar to real IPL franchises."
+    "answer": "Organised by Ecell, this event includes a quiz and a mock IPL auction. Teams bid for players with a set purse and squad size, following auction rules similar to real IPL franchises. \nRulebook: https://drive.google.com/open?id=1zGi-rBKLgNGtfzp3IEB9NVLe5X1V4aBfeTerrj_9AVY"
   },
   {
     "question": "What is Frame It Out?",
-    "answer": "Frame It Out from CEST is a civil engineering themed photography contest. Participants capture and submit images that reflect innovative structures and sustainability, posting them on Instagram and submitting them via a Google Form."
+    "answer": "Frame It Out from CEST is a civil engineering themed photography contest. Participants capture and submit images that reflect innovative structures and sustainability, posting them on Instagram and submitting them via a Google Form. \nRulebook: https://drive.google.com/open?id=1VsUXihU9FPADr0mNFU-qpIICkzQVhHoBVbKp51GrGQM"
   },
   {
     "question": "What is OMEGA?",
-    "answer": "Organised by AXIOM, OMEGA is a QR-based treasure hunt. Participants solve clues at checkpoints by scanning codes to advance towards the final prize."
+    "answer": "Organised by AXIOM, OMEGA is a QR-based treasure hunt. Participants solve clues at checkpoints by scanning codes to advance towards the final prize. \nRulebook: https://drive.google.com/open?id=1C1tiehhvNpawXhg6oDBNHxeOkGBf0n9n"
   },
   {
     "question": "What is PSI-PHI?",
-    "answer": "PSI-PHI, by AXIOM, is a business-themed hackathon. It starts with a quiz and leads qualifying teams into solving and presenting solutions to real-world problems."
+    "answer": "PSI-PHI, by AXIOM, is a business-themed hackathon. It starts with a quiz and leads qualifying teams into solving and presenting solutions to real-world problems. \nRulebook: https://drive.google.com/open?id=12G7Py4_8-HYS7g5CQQ3N6M5if7rcfsyD"
   },
   {
     "question": "What is Little Science Yard?",
@@ -225,7 +225,7 @@ export const questionAnswers = [
   },
   {
     "question": "What is Alloy Auction?",
-    "answer": "Run by STEELLUN, the Alloy Auction combines bidding and engineering. Teams solve technical challenges by purchasing appropriate materials, aiming to make the smartest, most resourceful choices possible."
+    "answer": "Run by STEELLUN, the Alloy Auction combines bidding and engineering. Teams solve technical challenges by purchasing appropriate materials, aiming to make the smartest, most resourceful choices possible. \nRulebook: https://drive.google.com/open?id=1IxUm4dOiJMdwIjUyiC_4v8CXhQeW-IXLxcoPKK1gbVk"
   },
   {
     "question": "What is SRIJAN?",
@@ -233,23 +233,23 @@ export const questionAnswers = [
   },
   {
     "question": "What is Mazehunt?",
-    "answer": "Mazehunt is a Genesys event where pairs solve questions and check in at various maze points. Volunteers ensure proper gameplay, and the end features fun challenges determining final winners."
+    "answer": "Mazehunt is a Genesys event where pairs solve questions and check in at various maze points. Volunteers ensure proper gameplay, and the end features fun challenges determining final winners. \nRulebook: https://drive.google.com/open?id=1QCLM9OSkjEnw_aksCTnNgmdXDDWUXlus"
   },
   {
     "question": "What is Bioventures: The Pitchdeck Showdown?",
-    "answer": "Organised by Genesys, this is a pitch competition at the intersection of science and entrepreneurship. Teams identify a bioengineering challenge, design a solution, and present a commercialisable pitch in front of judges."
+    "answer": "Organised by Genesys, this is a pitch competition at the intersection of science and entrepreneurship. Teams identify a bioengineering challenge, design a solution, and present a commercialisable pitch in front of judges. \nRulebook: https://drive.google.com/open?id=1VWb2eXmGVQ9b6_S_nr6StnGvhyWci6Lu"
   },
   {
     "question": "What is Weird Bazar?",
-    "answer": "Weird Bazar, by Grapevine – The Business Club, is a playful marketplace simulation. Teams compete as buyers and sellers with unusual products, fake currency, taxes, auctions, and surprise rules."
+    "answer": "Weird Bazar, by Grapevine – The Business Club, is a playful marketplace simulation. Teams compete as buyers and sellers with unusual products, fake currency, taxes, auctions, and surprise rules. \nRulebook: https://drive.google.com/open?id=1QaplsnZFUySntg1yxBXfnnQgVL_7vIoX"
   },
   {
     "question": "What is Spark-a-thon?",
-    "answer": "Spark-a-thon is a hackathon by Short Circuit. Teams build water monitoring systems using Arduino and sensors, incorporating machine learning for aquatic ecosystem analysis. Original code and safe design are required for all rounds."
+    "answer": "Spark-a-thon is a hackathon by Short Circuit. Teams build water monitoring systems using Arduino and sensors, incorporating machine learning for aquatic ecosystem analysis. Original code and safe design are required for all rounds. \nRulebook: https://drive.google.com/open?id=1zxJk7imALlQrpDvVOQMPNd7bQWajoBaj"
   },
   {
     "question": "What is The Missing CEO?",
-    "answer": "The Missing CEO, by Grapevine – The Business Club, is a business-themed mystery. Participants act as investigators, solving puzzles and collecting evidence to unravel a simulated corporate disappearance."
+    "answer": "The Missing CEO, by Grapevine – The Business Club, is a business-themed mystery. Participants act as investigators, solving puzzles and collecting evidence to unravel a simulated corporate disappearance. \nRulebook: https://drive.google.com/open?id=1oq4CwCVRsyeDrhruZ7BpOJlie8qe8vBj"
   },
   {
     "question": "What is the Workshop on Introduction to GPU?",
@@ -257,65 +257,20 @@ export const questionAnswers = [
   },
   {
     "question": "What is Prompt Abyss?",
-    "answer": "ML4E hosts Prompt Abyss, where participants recreate a target image using text prompts, submitting their attempts online. Each has a strict timer and originality is strictly enforced."
+    "answer": "ML4E hosts Prompt Abyss, where participants recreate a target image using text prompts, submitting their attempts online. Each has a strict timer and originality is strictly enforced. \nRulebook: https://drive.google.com/open?id=1_Xtv3ClLndAZTbmD-sNVTKXVSkJX_dIy"
   },
   {
     "question": "What is In-Verse (IDEATHON)?",
     "answer": "INSPIRE's In-Verse (IDEATHON) involves three rounds: an online PPT submission, an idea pitching session, and a final offline pitch, supporting innovation and problem-solving."
   },
 
-  {
-    "question": "What are some events at Innovision?",
-    "answer": "Innovision features a variety of events including Case Carnival, Sunken Cipher, Velocity Vortex, Design Dash!!, Roadies: The Food Saga 3.0, Hydronaut, Shake It Off, IPL Auction, Frame It Out, OMEGA, PSI-PHI, Little Science Yard, Alloy Auction, SRIJAN, Mazehunt, Bioventures: The Pitchdeck Showdown, Weird Bazar, Spark-a-thon, The Missing CEO, Workshop on GPU, Prompt Abyss, and In-Verse (IDEATHON)."
-  },
-  {
-    "question": "What are the tech events at Innovision?",
-    "answer": "Tech events include Sunken Cipher (algorithmic puzzles), Velocity Vortex (vehicle obstacle race), Hydronaut (DIY submarine challenge), Shake It Off (model structures for earthquake resistance), Spark-a-thon (hardware hackathon with Arduino and sensors), Prompt Abyss (AI text-to-image challenge), and the Workshop on Introduction to GPU, covering modern computing advances."
-  },
-  {
-    "question": "What are the cultural or creative events at Innovision?",
-    "answer": "Cultural and creative events include SRIJAN (exhibition of art, photography, and illusions), Design Dash!! (mini design games), Frame It Out (photography on civil engineering themes), and Mazehunt (maze with general knowledge challenges)."
-  },
-  {
-    "question": "Are there dance or music events at Innovision?",
-    "answer": "The provided event details do not list dedicated dance or music competitions among the official events. However, cultural showcases might be present elsewhere in the festival lineup or through proshows."
-  },
-  {
-    "question": "Which events are related to space or astronomy?",
-    "answer": "Satquest (Satellite in Distress), organised by Parikramaka, is a prominent event revolving around satellite and space technology, featuring riddles, problem-solving, and physics-based challenges in a competitive format."
-  },
-  {
-    "question": "Are there any robotics events at Innovision?",
-    "answer": "There is no robotics-specific event listed among the provided Innovision official events for this edition. Focused engineering contests include Velocity Vortex (vehicle design) and Hydronaut (DIY submarines)."
-  },
-  {
-    "question": "What are the hackathon events at Innovision?",
-    "answer": "The main hackathon event is Spark-a-thon, a multi-round challenge using Arduino-based systems and machine learning tools to solve real-world water monitoring problems. PSI-PHI is also a business hackathon combining quizzes and entrepreneurial case-solving."
-  },
-  {
-    "question": "Which events focus on business or entrepreneurship?",
-    "answer": "Business and entrepreneurship-centered events include Case Carnival (consulting case study), Weird Bazar (marketplace simulation), The Missing CEO (business-themed mystery investigation), PSI-PHI (business hackathon), and Bioventures: The Pitchdeck Showdown (science entrepreneurship pitching)."
-  },
-  {
-    "question": "Which events involve art, photography, or design?",
-    "answer": "SRIJAN (architectural and art exhibition), Frame It Out (photography contest), and Design Dash!! (design-themed mini games) are dedicated to creativity and visual arts."
-  },
-  {
-    "question": "Are there puzzle, treasure hunt, or maze events?",
-    "answer": "OMEGA is a classic QR-based treasure hunt, Mazehunt combines maze navigation and trivia, while Sunken Cipher blends algorithmic puzzles in a grid format."
-  },
-  {
-    "question": "Are there food-related competitions?",
-    "answer": "Roadies: The Food Saga 3.0 is a food-themed event with rounds including taste tests, trivia, and cooking challenges to test sensory and culinary knowledge."
-  },
 
 
 
 
 
 
-
-  ,{
+  {
     "question": "What is the War of Machine event by Game To Aim (GTA)?",
     "answer": "War of Machine is a Gaming Showcase and Competition featuring competitive gameplay.\nRulebook: https://drive.google.com/open?id=1o9uMGHC0zRmgkAfGKpzwN1F6vctvS6WE"
   },
