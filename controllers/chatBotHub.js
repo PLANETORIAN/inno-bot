@@ -231,7 +231,167 @@ class ChatBotController {
       'rules': {
         keywords: ['rules', 'regulations', 'guidelines', 'eligibility', 'requirements', 'criteria', 'conditions'],
         boost: 0.3
-      }
+      },
+
+
+      
+
+      'game-to-aim': {
+    keywords: [
+      'game to aim', 'gaming showcase', 'competition', 'war of machine', 'gta', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'astronitr': {
+    keywords: [
+      'astronitr', 'stellar night', 'astronomy', 'space', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'grapevine': {
+    keywords: [
+      'grapevine', 'business club', 'business mystery', 'the missing ceo', 'weird bazar', 'marketplace challenge', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'foodtech': {
+    keywords: [
+      'food tech', 'food saga', 'roadies', 'trivia', 'taste test', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'matrix': {
+    keywords: [
+      'matrix', 'matrix club', 'photography', 'snapstrix', 'matrix mystery mania', 'puzzle', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'axiom': {
+    keywords: [
+      'axiom', 'omega', 'psi-phi', 'treasure hunt', 'hackathon', 'business', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'steellun': {
+    keywords: [
+      'steellun', 'alloy auction', 'materials', 'engineering challenge', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'asme': {
+    keywords: [
+      'asme', 'velocity vortex', 'hydronaut', 'vehicle race', 'submarine', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'genesys': {
+    keywords: [
+      'genesys', 'bioengineering', 'pitchdeck', 'bioventure', 'maze hunt', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'ml4e': {
+    keywords: [
+      'ml4e', 'ai image generation', 'ai image', 'image challenge', 'prompt abyss', 'prompt', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'design-tab': {
+    keywords: [
+      'design tab', 'design dash', 'creative challenge', 'doodle', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'aps': {
+    keywords: [
+      'algorithmic and programming society', 'aps', 'sunken cipher', 'crypto puzzle', 'underwater puzzle', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'cognizen': {
+    keywords: [
+      'cognizen', 'intelligent trader', 'chaupaal', 'market simulation', 'debate', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'akriti': {
+    keywords: [
+      'akriti', 'radiance', 'art show', 'design contest', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'printstation': {
+    keywords: [
+      'printstation', 'escape room', 'puzzle', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'analytics-consulting': {
+    keywords: [
+      'analytics and consulting', 'case matrix', 'case study', 'consulting', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'opencode': {
+    keywords: [
+      'opencode', 'openchase', 'coding', 'programming', 'challenge', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'cest': {
+    keywords: [
+      'cest', 'shake it off', 'frame it out', 'earthquake', 'photography', 'civil engineering', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'inquizzitive': {
+    keywords: [
+      'inquizzitive', 'sci-biz-tech quiz', 'quiz', 'science', 'business', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'incers': {
+    keywords: [
+      'incers', 'ceramarin quiz', 'materials', 'ceramics', 'science', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  '3d-club': {
+    keywords: [
+      '3d data design and development', 'vibe with 3d', 'model mania', '3d modeling', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'ecell': {
+    keywords: [
+      'e-cell', 'ipl auction', 'auction', 'business', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'udaan': {
+    keywords: [
+      'udaan', 'aeroprix', 'hovermania', 'aeromodelling', 'hovercraft', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'short-circuit': {
+    keywords: [
+      'short circuit', 'spark-a-thon', 'hackathon', 'water monitoring', 'arduino', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'sae': {
+    keywords: [
+      'society of automotive engineers', 'virtual racing simulator', 'ignition grand prix', 'car show', 'automotive', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  },
+  'parikramaka': {
+    keywords: [
+      'parikramaka', 'satquest', 'satellite', 'space', 'challenge', 'club', 'rulebook'
+    ],
+    boost: 0.3
+  }
     };
   }
 
